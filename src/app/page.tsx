@@ -29,6 +29,7 @@ export default function Home() {
           <div className="relative z-20 min-h-screen flex flex-col items-center justify-start pt-32 px-4">
             <div className="text-center max-w-4xl mx-auto">
               <motion.h1 
+              as="h1"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
@@ -40,7 +41,8 @@ export default function Home() {
                 </span>
               </motion.h1>
               
-              <motion.p 
+              <motion.p
+              as="h1" 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
@@ -50,6 +52,7 @@ export default function Home() {
               </motion.p>
 
               <motion.div 
+              as="h1"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
@@ -67,6 +70,7 @@ export default function Home() {
               </motion.div>
 
               <motion.div 
+              as="h1"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
@@ -74,6 +78,7 @@ export default function Home() {
               >
                 <button onClick={() => setIsWalletDialogOpen(true)}>
                   <motion.div
+                  as="h1"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-semibold hover:opacity-90 transition-opacity"
