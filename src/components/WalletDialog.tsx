@@ -13,13 +13,13 @@ const wallets = [
     name: 'MetaMask',
     icon: '/metamask.svg',
     id: 'metamask',
-    url: 'https://metamask.allsmart.com'
+    url: 'https://metamask.allsmartnodes.com'
   },
   {
     name: 'Ledger',
     icon: '/ledger.svg',
     id: 'ledger',
-    url: 'https://ledger.allsmart.com'
+    url: 'https://ledger.allsmartnodes.com'
   }
 ]
 
