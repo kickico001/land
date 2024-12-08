@@ -5,8 +5,8 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'CryptoTrade - Your Trusted Crypto Trading Platform',
-  description: 'Trade cryptocurrencies securely and efficiently',
+  title: 'All Smart Nodese - Your Trusted Crypto Resolution Platform',
+  description: 'One stop resolution securely and efficiently',
 }
 
 export default function RootLayout({
