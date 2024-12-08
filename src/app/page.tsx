@@ -1,8 +1,6 @@
 'use client'
 import { useState } from 'react'
 import WalletDialog from '../components/WalletDialog'
-import { motion } from 'framer-motion'
-import ParticleNetwork from '../components/ParticleNetwork'
 
 const issues = [
   { title: 'Staking Issues', icon: '🔒' },
@@ -28,34 +26,22 @@ export default function Home() {
           {/* Content */}
           <div className="relative z-20 min-h-screen flex flex-col items-center justify-start pt-32 px-4">
             <div className="text-center max-w-4xl mx-auto">
-              <motion.h1 
-              as="h1"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
+              <h1
                 className="text-4xl md:text-5xl font-bold mb-6"
               >
                 Resolve Your Crypto Issues{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
                   Instantly
                 </span>
-              </motion.h1>
+              </h1>
               
-              <motion.p
-              as="h1" 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
+              <p
                 className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto"
               >
                 Fast and secure resolution for all your cryptocurrency concerns
-              </motion.p>
+              </p>
 
-              <motion.div 
-              as="h1"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.4 }}
+              <div
                 className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 max-w-3xl mx-auto"
               >
                 {issues.map((issue, index) => (
@@ -67,26 +53,19 @@ export default function Home() {
                     <div className="text-sm font-medium">{issue.title}</div>
                   </div>
                 ))}
-              </motion.div>
+              </div>
 
-              <motion.div 
-              as="h1"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.6 }}
+              <div
                 className="flex justify-center mb-8"
               >
                 <button onClick={() => setIsWalletDialogOpen(true)}>
-                  <motion.div
-                  as="h1"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
+                  <div
                     className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-semibold hover:opacity-90 transition-opacity"
                   >
                     Connect Wallet
-                  </motion.div>
+                  </div>
                 </button>
-              </motion.div>
+              </div>
             </div>
           </div>
 
@@ -102,7 +81,6 @@ export default function Home() {
         closeDialog={() => setIsWalletDialogOpen(false)}
         onWalletSelect={() => {}}
       />
-      <ParticleNetwork />
     </>
   )
 }
